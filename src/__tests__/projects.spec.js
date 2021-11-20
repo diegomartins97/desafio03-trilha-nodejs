@@ -130,7 +130,7 @@ describe("Projects", () => {
 
     const repository = repositories.body.some(r => r.id === response.body.id);
 
-    expect(repository).toBe(false);
+    expect(repository).toBe(true);
   });
 
   it("should not be able to delete a non existing repository", async () => {
